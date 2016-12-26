@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/Text"
+        android:text="12/31\n10:00"
+        android:layout_width="wrap_content"
+        android:id="@+id/ch_row_date"
+        android:layout_weight="0" />
+
+    <TextView
+        style="@style/Text"
+        android:text="buy milk #oc 1"
+        android:layout_width="100dp"
+        android:id="@+id/ch_row_title"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/Text.Number"
+        android:id="@+id/ch_row_in"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/Text.Number"
+        android:id="@+id/ch_row_out"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/Text.Number"
+        android:id="@+id/ch_row_diff"
+        android:layout_weight="0"/>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/Text"
+        android:text="Current"
+        android:layout_width="100dp"
+        android:layout_weight="1" />
+
+    <EditText
+        style="@style/Text.Number"
+        android:id="@+id/cf_row_input_current_amount"
+        android:inputType="number"
+        android:text=""
+        android:maxLength="10"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/Text.Number"
+        android:text="0"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/Text.Number"
+        android:text="0"
+        android:layout_weight="0"/>
+
+
+</LinearLayout>

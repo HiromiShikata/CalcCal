@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/Text"
+        android:text="Date Time"
+        android:layout_width="100dp"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/Text.Number"
+        android:text="In"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/Text.Number"
+        android:text="Out"
+        android:layout_weight="0"/>
+
+    <TextView
+        style="@style/Text.Number"
+        android:text="Diff"
+        android:layout_weight="0"/>
+
+
+</LinearLayout>

@@ -1,6 +1,9 @@
 package com.imorih.common;
 
 import android.app.Fragment;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.PermissionChecker;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
@@ -33,6 +36,16 @@ public abstract class BaseActivity extends AppCompatActivity {
       Thread.sleep(ms);
     } catch (InterruptedException e) {
       //noop
+    }
+  }
+
+  protected void checkPermissions(int callbackId, String... permissionIds){
+    boolean permissions = true;
+    for(String p : permissionIds){
+      permissions = permissions && ContextCompat.checkSelfPermission(this, p) == PermissionChecker.PERMISSION_GRANTED;
+    }
+    if(!permissions){
+      ActivityCompat.requestPermissions(this, permissionIds, callbackId);
     }
   }
 
